@@ -1,60 +1,73 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-app>
+        <v-app-bar
+                app
+                elevation="0"
+                color="white"
+        >
+            <v-img
+                    alt="Vuetify Logo"
+                    class="shrink mr-4 ml-10"
+                    contain
+                    src="./assets/logo.jpg"
+                    transition="scale-transition"
+                    width="40"
+            />
+            <h2 class="color: purple--text">X Delivery</h2>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+            <v-spacer></v-spacer>
 
-      <v-spacer></v-spacer>
+            <v-btn
+                    route="/about"
+                    target="_blank"
+                    color="white purple--text"
+                    elevation="0"
+                    class="mr-2"
+            >
+                <span class="mr-2">Home</span>
+            </v-btn>
+            <v-btn
+                    route="/about"
+                    target="_blank"
+                    color="white purple--text"
+                    elevation="0"
+                    class="mr-2"
+            >
+                <span class="mr-2">About Us</span>
+            </v-btn>
+            <v-btn
+                    route="/about"
+                    target="_blank"
+                    color="white purple--text"
+                    elevation="0"
+                    class="mr-2"
+            >
+                <span class="mr-2">Admin</span>
+                <v-icon>mdi-open-in-new</v-icon>
+            </v-btn>
+        </v-app-bar>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+        <v-main>
+            <Home></Home>
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+    import Home from './views/Home'
 
-export default {
-  name: 'App',
+    export default {
+        name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+        components: {
+            Home
+        },
 
-  data: () => ({
-    //
-  }),
-};
+        data: () => ({
+            //
+        }),
+    };
 </script>
+<style scoped>
+
+</style>

@@ -1,9 +1,9 @@
 <template>
     <v-col>
         <v-carousel
-                style="width: 700px"
+                style="width: 650px"
                 height="450px"
-                class="mr-16"
+                class="mr-0"
                 cycle
                 interval="4500"
                 hide-delimiters="true"
